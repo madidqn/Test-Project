@@ -30,7 +30,7 @@
 				.header__link {
 					color: $text-white-color;
 
-					&:hover {
+					&--active {
 						text-decoration: underline;
 					}
 				}

@@ -37,6 +37,10 @@
 
 		.user-card__gender {
 			color: $text-gray-color;
+
+			&::first-letter {
+				text-transform: uppercase;
+			}
 		}
 	}
 

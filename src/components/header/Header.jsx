@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router'
+import { NavLink } from 'react-router-dom'
 import styles from './Header.module.scss'
 
 const Header = () => {
@@ -9,12 +9,18 @@ const Header = () => {
 				<div className={styles['header__container-menu']}>
 					<ul className={styles.header__menu}>
 						<li>
-							<NavLink to='/' className={styles.header__link}>
+							<NavLink
+								to='/'
+								className={({ isActive }) => (isActive ? `${styles['header__link--active']} ${styles.header__link}` : styles.header__link)}
+							>
 								Home
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to='/profiles' className={styles.header__link}>
+							<NavLink
+								to='/profiles'
+								className={({ isActive }) => (isActive ? `${styles['header__link--active']} ${styles.header__link}` : styles.header__link)}
+							>
 								Profiles
 							</NavLink>
 						</li>
