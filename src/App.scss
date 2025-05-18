@@ -1,5 +1,5 @@
-@import './assets/styles/_variables.scss';
+@use './assets/styles/_variables.scss' as variables;
 
 body {
-	background-color: $bg-color;
+	background-color: variables.$bg-color;
 }

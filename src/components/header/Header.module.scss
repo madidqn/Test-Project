@@ -1,9 +1,9 @@
-@import '../../assets/styles/_variables.scss';
+@use '../../assets/styles/_variables.scss' as variables;
 
 .header {
 	width: 100%;
 	padding: 2rem 0;
-	background-color: $primary-color;
+	background-color: variables.$primary-color;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -14,7 +14,7 @@
 		width: 80%;
 
 		> .header__logo {
-			color: $text-white-color;
+			color: variables.$text-white-color;
 		}
 
 		.header__container-menu {
@@ -25,10 +25,10 @@
 				display: flex;
 				justify-content: flex-end;
 				gap: 4rem;
-				color: $text-white-color;
+				color: variables.$text-white-color;
 
 				.header__link {
-					color: $text-white-color;
+					color: variables.$text-white-color;
 
 					&--active {
 						text-decoration: underline;

@@ -1,7 +1,7 @@
-@import '../../assets/styles/_variables.scss';
+@use '../../assets/styles/_variables.scss' as variables;
 
 .user-card {
-	background-color: $bg-card-color;
+	background-color: variables.$bg-card-color;
 	border-radius: 8px;
 	padding: 2rem;
 	transition: transform 0.2s;
@@ -37,7 +37,7 @@
 		}
 
 		.user-card__gender {
-			color: $text-gray-color;
+			color: variables.$text-gray-color;
 
 			&::first-letter {
 				text-transform: uppercase;
@@ -58,7 +58,7 @@
 
 			.user-card__phone,
 			.user-card__location {
-				color: $text-gray-color;
+				color: variables.$text-gray-color;
 			}
 		}
 	}
