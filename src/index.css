@@ -6,6 +6,10 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+body {
+	background-color: #1a1313;
+}
+
 * {
 	margin: 0;
 	padding: 0;

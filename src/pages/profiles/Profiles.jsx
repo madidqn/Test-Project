@@ -1,5 +1,7 @@
+import Container from '../../components/container/Container'
+
 const Profiles = () => {
-	return <div>Profiles</div>
+	return <Container>Profiles</Container>
 }
 
 export default Profiles
