@@ -9,10 +9,14 @@ const Header = () => {
 				<div className={styles['header__container-menu']}>
 					<ul className={styles.header__menu}>
 						<li>
-							<NavLink to='/'>Home</NavLink>
+							<NavLink to='/' className={styles.header__link}>
+								Home
+							</NavLink>
 						</li>
 						<li>
-							<NavLink to='/profiles'>Profiles</NavLink>
+							<NavLink to='/profiles' className={styles.header__link}>
+								Profiles
+							</NavLink>
 						</li>
 					</ul>
 				</div>

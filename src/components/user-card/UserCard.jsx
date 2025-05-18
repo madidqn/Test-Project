@@ -9,12 +9,12 @@ const UserCard = ({ user, index }) => {
 			<span className={styles['user-card__index']}>{index + 1}</span>
 			<div className={styles['user-card__info-person']}>
 				<img className={styles['user-card__image']} src={user.picture.large} alt={`${user.name.first} ${user.name.last}`} />
-				<p>
+				<div>
 					<h6 className={styles['user-card__name']}>
 						{user.name.first} {user.name.last}
 					</h6>
 					<p className={styles['user-card__gender']}>{user.gender}</p>
-				</p>
+				</div>
 			</div>
 			<div className={styles['user-card__info-contact']}>
 				<div className={[styles['user-card__info-contact-item']]}>

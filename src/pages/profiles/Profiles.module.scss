@@ -1,5 +1,7 @@
+@import '../../assets/styles/_variables.scss';
+
 .profiles {
-	color: white;
+	color: $text-white-color;
 	padding: 2rem 0;
 	display: flex;
 	flex-direction: column;

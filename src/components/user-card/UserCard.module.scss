@@ -1,5 +1,7 @@
+@import '../../assets/styles/_variables.scss';
+
 .user-card {
-	background-color: #2a2a2a;
+	background-color: $bg-card-color;
 	border-radius: 8px;
 	padding: 2rem;
 	transition: transform 0.2s;
@@ -34,7 +36,7 @@
 		}
 
 		.user-card__gender {
-			color: #888;
+			color: $text-gray-color;
 		}
 	}
 
@@ -51,7 +53,7 @@
 
 			.user-card__phone,
 			.user-card__location {
-				color: #888;
+				color: $text-gray-color;
 			}
 		}
 	}

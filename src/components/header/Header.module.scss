@@ -1,7 +1,9 @@
+@import '../../assets/styles/_variables.scss';
+
 .header {
 	width: 100%;
 	padding: 2rem 0;
-	background-color: #ff9f00;
+	background-color: $primary-color;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -12,7 +14,7 @@
 		width: 80%;
 
 		> .header__logo {
-			color: white;
+			color: $text-white-color;
 		}
 
 		.header__container-menu {
@@ -23,7 +25,15 @@
 				display: flex;
 				justify-content: flex-end;
 				gap: 4rem;
-				color: white;
+				color: $text-white-color;
+
+				.header__link {
+					color: $text-white-color;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
 			}
 		}
 	}
