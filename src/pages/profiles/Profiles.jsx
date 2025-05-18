@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Container from '../../components/container/Container'
-import UserCard from '../../components/user-card/UserCard'
+import Profile from '../../components/profile/Profile'
 import styles from './Profiles.module.scss'
 
 const Profiles = () => {
@@ -45,7 +45,7 @@ const Profiles = () => {
 		<Container>
 			<ul className={styles.profiles}>
 				{data.map((user, index) => (
-					<UserCard key={index} user={user} index={index} />
+					<Profile key={index} user={user} index={index} />
 				))}
 				{loading && <p className={styles.loading}></p>}
 			</ul>

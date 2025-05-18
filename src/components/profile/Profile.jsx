@@ -1,9 +1,8 @@
-import styles from './UserCard.module.scss'
 import { BiPhone } from 'react-icons/bi'
 import { MdMarkEmailUnread, MdLocationOn } from 'react-icons/md'
+import styles from './Profile.module.scss'
 
-const UserCard = ({ user, index }) => {
-	console.log(user)
+const Profile = ({ user, index }) => {
 	return (
 		<section className={styles['user-card']}>
 			<span className={styles['user-card__index']}>{index + 1}</span>
@@ -36,4 +35,4 @@ const UserCard = ({ user, index }) => {
 	)
 }
 
-export default UserCard
+export default Profile

@@ -6,21 +6,21 @@
 		padding: 2rem 0;
 		text-align: center;
 	}
+}
 
-	.hero-box {
-		display: flex;
-		align-items: center;
-		gap: 4rem;
+.hero-box {
+	display: flex;
+	align-items: center;
+	gap: 4rem;
 
-		&__image {
-			width: 60%;
-			height: 40%;
-			border-radius: 8px;
-		}
+	&__image {
+		width: 60%;
+		height: 40%;
+		border-radius: 8px;
+	}
 
-		&__paragraph {
-			color: $text-gray-color;
-			padding: 1rem 0;
-		}
+	&__paragraph {
+		color: $text-gray-color;
+		padding: 1rem 0;
 	}
 }
