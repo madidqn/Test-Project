@@ -7,12 +7,18 @@
 	display: flex;
 	align-items: center;
 	gap: 1rem;
+	position: relative;
 
 	&:hover {
 		transform: scale(1.01);
 	}
+	&__index {
+		position: absolute;
+		top: 15px;
+		left: 15px;
+	}
 
-	.user-card__info-person {
+	&__info-person {
 		display: flex;
 		align-items: center;
 		gap: 1rem;
@@ -32,16 +38,21 @@
 		}
 	}
 
-	.user-card__info-contact {
+	&__info-contact {
 		width: 50%;
 		display: flex;
 		flex-direction: column;
 		gap: 0.5rem;
 
-		.user-card__phone,
-		.user-card__email,
-		.user-card__location {
-			color: #888;
+		.user-card__info-contact-item {
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+
+			.user-card__phone,
+			.user-card__location {
+				color: #888;
+			}
 		}
 	}
 }

@@ -25,9 +25,9 @@ const Profiles = () => {
 	return (
 		<Container>
 			<ul className={styles.profiles}>
-				{data?.map(user => (
+				{data?.map((user, index) => (
 					<li key={user.login.uuid}>
-						<UserCard user={user} />
+						<UserCard user={user} index={index} />
 					</li>
 				))}
 			</ul>
