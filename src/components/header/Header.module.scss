@@ -1,0 +1,30 @@
+.header {
+	width: 100%;
+	padding: 2.5rem 0;
+	background-color: #ff9f00;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__container-logo {
+		display: flex;
+		align-items: center;
+		width: 80%;
+
+		> .header__logo {
+			color: white;
+		}
+
+		.header__container-menu {
+			margin-left: auto;
+
+			> .header__menu {
+				list-style: none;
+				display: flex;
+				justify-content: flex-end;
+				gap: 4rem;
+				color: white;
+			}
+		}
+	}
+}

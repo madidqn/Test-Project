@@ -1,9 +1,13 @@
+import Header from './components/header/Header'
+import AppRoutes from './routes/AppRoutes'
+
 import './App.scss'
 
 const App = () => {
 	return (
 		<>
-			<p className='read-the-docs'>Click on the Vite and React logos to learn more</p>
+			<Header />
+			<AppRoutes />
 		</>
 	)
 }
